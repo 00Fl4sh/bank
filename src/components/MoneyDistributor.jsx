@@ -26,7 +26,6 @@ const MoneyDistributor = () => {
         },
         body: JSON.stringify({ amount: transferAmount }),
       });
-  
       if (transferResponse.ok) {
         // If the transfer was successful, fetch accounts again to update the UI
         fetchAccounts();
